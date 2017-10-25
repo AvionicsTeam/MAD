@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Projekt Mikrokomputery" company="Politechnika Rzeszowska" webLink="http://" view-date="2017-10-28" view-index="0" gantt-divider-location="650" resource-divider-location="548" version="2.8.5" locale="pl">
+<?xml version="1.0" encoding="UTF-8"?><project name="Projekt Mikrokomputery" company="Politechnika Rzeszowska" webLink="http://" view-date="2017-10-27" view-index="1" gantt-divider-location="650" resource-divider-location="548" version="2.8.5" locale="pl">
     <description><![CDATA[Bazowy harmonogram realizacji projektu z przedmiotu Mikrokontrolery dla specjalności Awionika.
 
 v.1.0. Wersja wstępna
@@ -6,7 +6,7 @@ v.1.0. Wersja wstępna
 Piotr Grzybowski
 Politechnika Rzeszowska
 2017]]></description>
-    <view zooming-state="default:2" id="gantt-chart">
+    <view zooming-state="default:1" id="gantt-chart">
         <field id="tpd3" name="Nazwa zadania" width="386" order="0"/>
         <field id="tpd4" name="Data rozpoczęcia" width="104" order="1"/>
         <field id="tpd5" name="Data zakończenia" width="141" order="2"/>
@@ -76,7 +76,12 @@ Zadania
 ]]></notes>
                 </task>
                 <task id="213" name="Tematyka projektu" color="#3333ff" meeting="false" start="2017-10-13" duration="13" complete="0" expand="true">
-                    <notes><![CDATA[słowo wstępu (dlaczego taki projekt, gdzie znajdzie zastosowanie, jaki będzie zakres prac) [ok. 0.5-1 strony]]]></notes>
+                    <notes><![CDATA[Wybór tematu projektu jest uzasadniony chęcią poznania metod prototypowania oraz testowania oprogramowania przeznaczonego dla urządzeń wbudowanych. W zakres prac wchodzą:
+- wybór platformy sprzętowej (płytki prototypowej),
+- projektowanie oprogramowania w zespole (z wykorzystaniem systemu kontroli wersji Git),
+- testowanie oprogramowania (symulacje HIL, SIL, testy jednostkowe).
+
+Projekt pomoże w opracowaniu metodyki prototypowania urządzeń elektronicznych opartych o mikroprocesory.]]></notes>
                 </task>
                 <task id="217" name="Założenia do budowy urządzenia" color="#990099" meeting="false" start="2017-10-13" duration="13" complete="0" expand="true">
                     <notes><![CDATA[- należy przeanalizować ograniczenia formalne (stosowane przepisy, w tym lotnicze),
@@ -122,17 +127,7 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
                     <notes><![CDATA[Wstępny opis w jaki sposób zamierza się wykonać urządzenie]]></notes>
                 </task>
                 <task id="243" name="Schemat blokowy urządzenia" color="#3333ff" meeting="false" start="2017-10-27" duration="2" complete="0" expand="true">
-                    <notes><![CDATA[Stworzyć schemat blokowy urzdzenia zawierajacy
--interfejsy wejściowe, 
--interfejsy wyjściowe, 
--układ zasilania, 
-]]></notes>
-                </task>
-                <task id="247" name="Opis poszczególnych bloków" color="#3333ff" meeting="false" start="2017-10-27" duration="2" complete="0" expand="true">
-                    <notes><![CDATA[ Opis poszczególnych bloków na schemacie blokowym :
--co dany blok robi, 
--co jest dostarczane do bloku,
--jakie jest wyjście z bloku]]></notes>
+                    <notes><![CDATA[Stworzyć schemat blokowy oprogramowania.]]></notes>
                 </task>
             </task>
             <task id="117" name="Dobór elementów" color="#990099" meeting="false" start="2017-10-29" duration="1" complete="0" expand="true">
@@ -184,6 +179,7 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
                     <depend id="119" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="119" name="Opracowanie niezbędnych bibliotek" color="#00ff00" meeting="false" start="2017-11-08" duration="28" complete="0" expand="true">
+                    <notes><![CDATA[Opracowanie niezbędnych bibliotek w języku C.]]></notes>
                     <task id="301" name="Czujniki" color="#990099" meeting="false" start="2017-11-08" duration="28" complete="0" expand="true">
                         <notes><![CDATA[Należy opracować następujące zagadnienia:
 - odczyt danych z czujników
@@ -207,9 +203,11 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
                     <task id="307" name="Model matematyczny" color="#00ff00" meeting="false" start="2017-11-08" duration="7" complete="0" expand="true">
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
                         <task id="311" name="Uzyskanie dynamiki z x-plane" color="#3333ff" meeting="false" start="2017-11-08" duration="3" complete="0" expand="true">
+                            <notes><![CDATA[Wybór sterowanego samolotu i rejestracja danych z prób w locie na symulatorze.]]></notes>
                             <depend id="313" type="2" difference="0" hardness="Strong"/>
                         </task>
                         <task id="313" name="Opracowanie transmitancji" color="#3333ff" meeting="false" start="2017-11-11" duration="4" complete="0" expand="true">
+                            <notes><![CDATA[Stworzenie modelu matematycznego wybranych kanałów sterowania samolotem na podstawie wcześniej zarejestrowanych danych.]]></notes>
                             <depend id="294" type="2" difference="0" hardness="Strong"/>
                             <depend id="296" type="2" difference="0" hardness="Strong"/>
                             <depend id="323" type="2" difference="0" hardness="Strong"/>
@@ -225,8 +223,8 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
                         <task id="323" name="Testy jednostkowe" color="#ff9999" meeting="false" start="2017-11-15" duration="21" complete="0" expand="true"/>
                     </task>
                     <task id="299" name="Komunikacja z x-plane" color="#3333ff" meeting="false" start="2017-11-15" duration="21" complete="0" expand="true">
+                        <notes><![CDATA[Zadanie polega na skomunikowaniu płytki z symulatorem. Przewidujemy komunikację przy użyciu magistrali UART.]]></notes>
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
-                        <task id="341" name="Magistrala (CAN)" color="#3333ff" meeting="false" start="2017-11-15" duration="21" complete="0" expand="true"/>
                     </task>
                 </task>
                 <task id="120" name="Integracja oprogramowania" color="#00ff00" meeting="false" start="2017-12-06" duration="5" complete="0" expand="true"/>
@@ -278,7 +276,10 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia zaliczenie projektu. Opóźnieni
         <task id="157" name="Wykonanie" color="#000000" meeting="false" start="2018-01-01" duration="17" complete="0" expand="true">
             <notes><![CDATA[Niniejsza część służy wykonaniu prototypu urządzenia. Musi wynikać ona bezpośrednio z projektu konstrukcyjnego.
 ]]></notes>
-            <task id="201" name="Montaż elementów" color="#00ff00" meeting="false" start="2018-01-01" duration="1" complete="0" expand="true"/>
+            <task id="201" name="Montaż elementów" color="#00ff00" meeting="false" start="2018-01-01" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Integracja stanowiska - podłączenie urządzenia do symulatora lotów.
+]]></notes>
+            </task>
             <task id="177" name="Zatwierdzenie wykonania prototypu urządzenia" color="#ff0000" meeting="true" start="2018-01-18" duration="0" complete="0" expand="true">
                 <notes><![CDATA[Warunki zaliczenia etapu:
 1. Pokazanie prtotypu urządzenia,
@@ -338,11 +339,9 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
         <allocation task-id="213" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="220" resource-id="8" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="243" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
-        <allocation task-id="247" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="119" resource-id="8" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="105" resource-id="8" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="299" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
-        <allocation task-id="341" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="307" resource-id="8" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="311" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="313" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
