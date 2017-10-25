@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Projekt Mikrokomputery" company="Politechnika Rzeszowska" webLink="http://" view-date="2017-10-27" view-index="1" gantt-divider-location="650" resource-divider-location="548" version="2.8.5" locale="pl">
+<?xml version="1.0" encoding="UTF-8"?><project name="Projekt Mikrokomputery" company="Politechnika Rzeszowska" webLink="http://" view-date="2017-10-22" view-index="0" gantt-divider-location="650" resource-divider-location="548" version="2.8.5" locale="pl">
     <description><![CDATA[Bazowy harmonogram realizacji projektu z przedmiotu Mikrokontrolery dla specjalności Awionika.
 
 v.1.0. Wersja wstępna
@@ -76,12 +76,7 @@ Zadania
 ]]></notes>
                 </task>
                 <task id="213" name="Tematyka projektu" color="#3333ff" meeting="false" start="2017-10-13" duration="13" complete="0" expand="true">
-                    <notes><![CDATA[Wybór tematu projektu jest uzasadniony chęcią poznania metod prototypowania oraz testowania oprogramowania przeznaczonego dla urządzeń wbudowanych. W zakres prac wchodzą:
-- wybór platformy sprzętowej (płytki prototypowej),
-- projektowanie oprogramowania w zespole (z wykorzystaniem systemu kontroli wersji Git),
-- testowanie oprogramowania (symulacje HIL, SIL, testy jednostkowe).
-
-Projekt pomoże w opracowaniu metodyki prototypowania urządzeń elektronicznych opartych o mikroprocesory.]]></notes>
+                    <notes><![CDATA[Opis tematyki projektu (Co? Po co? Dlaczego?)]]></notes>
                 </task>
                 <task id="217" name="Założenia do budowy urządzenia" color="#990099" meeting="false" start="2017-10-13" duration="13" complete="0" expand="true">
                     <notes><![CDATA[- należy przeanalizować ograniczenia formalne (stosowane przepisy, w tym lotnicze),
@@ -202,7 +197,7 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
                     </task>
                     <task id="307" name="Model matematyczny" color="#00ff00" meeting="false" start="2017-11-08" duration="7" complete="0" expand="true">
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
-                        <task id="311" name="Uzyskanie dynamiki z x-plane" color="#3333ff" meeting="false" start="2017-11-08" duration="3" complete="0" expand="true">
+                        <task id="311" name="`" color="#3333ff" meeting="false" start="2017-11-08" duration="3" complete="0" expand="true">
                             <notes><![CDATA[Wybór sterowanego samolotu i rejestracja danych z prób w locie na symulatorze.]]></notes>
                             <depend id="313" type="2" difference="0" hardness="Strong"/>
                         </task>
