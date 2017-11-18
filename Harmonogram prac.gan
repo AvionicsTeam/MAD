@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Projekt Mikrokomputery" company="Politechnika Rzeszowska" webLink="http://" view-date="2017-09-25" view-index="0" gantt-divider-location="650" resource-divider-location="548" version="2.8.5" locale="pl">
+<?xml version="1.0" encoding="UTF-8"?><project name="Projekt Mikrokomputery" company="Politechnika Rzeszowska" webLink="http://" view-date="2017-11-20" view-index="0" gantt-divider-location="650" resource-divider-location="548" version="2.8.5" locale="pl">
     <description><![CDATA[Bazowy harmonogram realizacji projektu z przedmiotu Mikrokontrolery dla specjalności Awionika.
 
 v.1.0. Wersja wstępna
@@ -6,10 +6,10 @@ v.1.0. Wersja wstępna
 Piotr Grzybowski
 Politechnika Rzeszowska
 2017]]></description>
-    <view zooming-state="default:7" id="gantt-chart">
-        <field id="tpd3" name="Nazwa zadania" width="382" order="0"/>
-        <field id="tpd4" name="Data rozpoczęcia" width="106" order="1"/>
-        <field id="tpd5" name="Data zakończenia" width="143" order="2"/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nazwa zadania" width="387" order="0"/>
+        <field id="tpd4" name="Data rozpoczęcia" width="111" order="1"/>
+        <field id="tpd5" name="Data zakończenia" width="148" order="2"/>
         <option id="color.recent"><![CDATA[#00ff00 #f4f4f4 #990099 #3333ff #ff9999 #000000 #ff0000 #ffcc00]]></option>
     </view>
     <view id="resource-table">
@@ -110,7 +110,7 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
                 <depend id="64" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="112" name="Projekt koncepcyjny" color="#00ff00" meeting="false" start="2017-10-27" duration="20" complete="0" expand="true">
+        <task id="112" name="Projekt koncepcyjny" color="#00ff00" meeting="false" start="2017-10-27" duration="20" complete="0" expand="false">
             <notes><![CDATA[Niniejsza część służy do zdefiniowania koncepcji działania urządzenia. Musi wynikać ona bezpośrednio z przyjętych założeń.
 ]]></notes>
             <depend id="24" type="2" difference="0" hardness="Strong"/>
@@ -164,12 +164,12 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
         <task id="24" name="Projekt konstrukcyjny" color="#00ff00" meeting="false" start="2017-11-16" duration="35" complete="0" expand="true">
             <notes><![CDATA[Niniejsza część służy do opracowania konstrukcji urządzenia. Musi wynikać ona bezpośrednio z przyjętej koncepcji.
 ]]></notes>
-            <task id="114" name="Hardware" color="#000000" meeting="false" start="2017-11-16" duration="7" complete="0" expand="true">
-                <task id="27" name="Opracowanie schematu elektrycznego urządzenia" color="#990099" meeting="false" start="2017-11-16" duration="6" complete="0" expand="true">
+            <task id="114" name="Hardware" color="#000000" meeting="false" start="2017-11-16" duration="10" complete="0" expand="true">
+                <task id="27" name="Opracowanie schematu elektrycznego urządzenia" color="#990099" meeting="false" start="2017-11-16" duration="9" complete="0" expand="true">
                     <notes><![CDATA[Opisać sposób połączenia odpowiednich podzespołów ze sobą. Należy również zamieścić zestawienie używanych magistrali.]]></notes>
                     <depend id="32" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="32" name="Zatwierdzenie schematu elektrycznego" color="#ff0000" meeting="false" start="2017-11-22" duration="1" complete="0" expand="true"/>
+                <task id="32" name="Zatwierdzenie schematu elektrycznego" color="#ff0000" meeting="false" start="2017-11-25" duration="1" complete="0" expand="true"/>
             </task>
             <task id="113" name="Software" color="#00ff00" meeting="false" start="2017-11-17" duration="34" complete="0" expand="true">
                 <notes><![CDATA[Główna część projektu konstrukcyjnego
@@ -200,32 +200,29 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
                             <notes><![CDATA[W tej części należy zaimplementować odpowiednie testy jednostkowe, sprawdzające poprawność wynikowych kątów orientacji przestrzennej.]]></notes>
                         </task>
                     </task>
-                    <task id="307" name="Model matematyczny" color="#00ff00" meeting="false" start="2017-11-20" duration="4" complete="0" expand="true">
+                    <task id="307" name="Model matematyczny" color="#00ff00" meeting="false" start="2017-11-20" duration="11" complete="0" expand="true">
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
-                        <task id="313" name="Opracowanie transmitancji" color="#3333ff" meeting="false" start="2017-11-20" duration="4" complete="0" expand="true">
+                        <task id="313" name="Opracowanie transmitancji" color="#3333ff" meeting="false" start="2017-11-20" duration="11" complete="0" expand="true">
                             <notes><![CDATA[Stworzenie modelu matematycznego wybranych kanałów sterowania samolotem na podstawie wcześniej zarejestrowanych danych.]]></notes>
-                            <depend id="294" type="2" difference="0" hardness="Strong"/>
-                            <depend id="296" type="2" difference="0" hardness="Strong"/>
-                            <depend id="323" type="2" difference="0" hardness="Strong"/>
                         </task>
                     </task>
-                    <task id="292" name="Regulator" color="#ff9999" meeting="false" start="2017-11-24" duration="21" complete="0" expand="true">
+                    <task id="292" name="Regulator" color="#ff9999" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
-                        <task id="294" name="Wybór regulatora" color="#ff9999" meeting="false" start="2017-11-24" duration="21" complete="0" expand="true">
+                        <task id="294" name="Wybór regulatora" color="#ff9999" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
                             <notes><![CDATA[Wybór rodzaju regulatora w celu jego implementacji]]></notes>
                         </task>
-                        <task id="296" name="Implementacja" color="#ff9999" meeting="false" start="2017-11-24" duration="21" complete="0" expand="true">
+                        <task id="296" name="Implementacja" color="#ff9999" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
                             <notes><![CDATA[Implementacja wymaga:
 - stworzenia bibliotek,
 - dobór parametrów regulatora.]]></notes>
                         </task>
-                        <task id="323" name="Testy jednostkowe" color="#ff9999" meeting="false" start="2017-11-24" duration="21" complete="0" expand="true">
+                        <task id="323" name="Testy jednostkowe" color="#ff9999" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
                             <notes><![CDATA[Wykonanie testów jednostkowych w celu sprawdzenia działania bibliotek zgodnie z założeniami.
 ]]></notes>
                         </task>
                     </task>
-                    <task id="299" name="Komunikacja z x-plane" color="#3333ff" meeting="false" start="2017-11-20" duration="21" complete="0" expand="true">
-                        <notes><![CDATA[Zadanie polega na skomunikowaniu płytki z symulatorem. Przewidywana komunikacja przy użyciu magistrali UART.]]></notes>
+                    <task id="299" name="Komunikacja z x-plane" color="#3333ff" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                        <notes><![CDATA[Zadanie polega na skomunikowaniu płytki z symulatorem. Przewidywana komunikacja przy użyciu magistrali CAN.]]></notes>
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
