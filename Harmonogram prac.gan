@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Projekt Mikrokomputery" company="Politechnika Rzeszowska" webLink="http://" view-date="2017-11-20" view-index="0" gantt-divider-location="650" resource-divider-location="548" version="2.8.5" locale="pl">
+<?xml version="1.0" encoding="UTF-8"?><project name="Projekt Mikrokomputery" company="Politechnika Rzeszowska" webLink="http://" view-date="2017-10-23" view-index="0" gantt-divider-location="650" resource-divider-location="548" version="2.8.5" locale="pl">
     <description><![CDATA[Bazowy harmonogram realizacji projektu z przedmiotu Mikrokontrolery dla specjalności Awionika.
 
 v.1.0. Wersja wstępna
@@ -161,74 +161,74 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
                 <depend id="113" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="24" name="Projekt konstrukcyjny" color="#00ff00" meeting="false" start="2017-11-16" duration="35" complete="0" expand="true">
+        <task id="24" name="Projekt konstrukcyjny" color="#00ff00" meeting="false" start="2017-11-16" duration="45" complete="0" expand="true">
             <notes><![CDATA[Niniejsza część służy do opracowania konstrukcji urządzenia. Musi wynikać ona bezpośrednio z przyjętej koncepcji.
 ]]></notes>
-            <task id="114" name="Hardware" color="#000000" meeting="false" start="2017-11-16" duration="10" complete="0" expand="true">
-                <task id="27" name="Opracowanie schematu elektrycznego urządzenia" color="#990099" meeting="false" start="2017-11-16" duration="9" complete="0" expand="true">
+            <task id="114" name="Hardware" color="#000000" meeting="false" start="2017-11-16" duration="15" complete="0" expand="true">
+                <task id="27" name="Opracowanie schematu elektrycznego urządzenia" color="#990099" meeting="false" start="2017-11-16" duration="14" complete="0" expand="true">
                     <notes><![CDATA[Opisać sposób połączenia odpowiednich podzespołów ze sobą. Należy również zamieścić zestawienie używanych magistrali.]]></notes>
                     <depend id="32" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="32" name="Zatwierdzenie schematu elektrycznego" color="#ff0000" meeting="false" start="2017-11-25" duration="1" complete="0" expand="true"/>
+                <task id="32" name="Zatwierdzenie schematu elektrycznego" color="#ff0000" meeting="false" start="2017-11-30" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="113" name="Software" color="#00ff00" meeting="false" start="2017-11-17" duration="34" complete="0" expand="true">
+            <task id="113" name="Software" color="#00ff00" meeting="false" start="2017-11-17" duration="44" complete="0" expand="true">
                 <notes><![CDATA[Główna część projektu konstrukcyjnego
 ]]></notes>
                 <depend id="111" type="2" difference="0" hardness="Strong"/>
-                <task id="105" name="Opracowanie struktury oprogramowania" color="#00ff00" meeting="false" start="2017-11-17" duration="3" complete="0" expand="true">
+                <task id="105" name="Opracowanie struktury oprogramowania" color="#00ff00" meeting="false" start="2017-11-17" duration="13" complete="0" expand="true">
                     <depend id="119" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="119" name="Opracowanie niezbędnych bibliotek" color="#00ff00" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                <task id="119" name="Opracowanie niezbędnych bibliotek" color="#00ff00" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                     <notes><![CDATA[Opracowanie niezbędnych bibliotek w języku C.]]></notes>
-                    <task id="301" name="Czujniki" color="#990099" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                    <task id="301" name="Czujniki" color="#990099" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                         <notes><![CDATA[Należy opracować następujące zagadnienia:
 - odczyt danych z czujników
 - zastosowanie odpowiedniego filtru
 - zaimplementowanie odpowiednich testów jednostkowych]]></notes>
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
-                        <task id="303" name="Odczyt" color="#990099" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                        <task id="303" name="Odczyt" color="#990099" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                             <notes><![CDATA[W tej części należy zrealizować:
 - obsłużyć odczyty z żyroskopu, akcelerometru, magnetometru za pomocą odpowiednich magistrali]]></notes>
                         </task>
-                        <task id="305" name="Filtracja" color="#990099" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                        <task id="305" name="Filtracja" color="#990099" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                             <notes><![CDATA[W tej części należy zaimplementować filtr, który będzie spełniał wymagania stawiane odczytom]]></notes>
                         </task>
-                        <task id="347" name="Implementacja algorytmu wyliczającego kąty orientacji przestrzennej" color="#990099" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                        <task id="347" name="Implementacja algorytmu wyliczającego kąty orientacji przestrzennej" color="#990099" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                             <notes><![CDATA[W tej części przy pomocy algorytmu madgwick otrzymane pomiary czujników, przekształcić kąty orientacji przestrzennej.]]></notes>
                         </task>
-                        <task id="321" name="Testy jednostkowe" color="#990099" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                        <task id="321" name="Testy jednostkowe" color="#990099" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                             <notes><![CDATA[W tej części należy zaimplementować odpowiednie testy jednostkowe, sprawdzające poprawność wynikowych kątów orientacji przestrzennej.]]></notes>
                         </task>
                     </task>
-                    <task id="307" name="Model matematyczny" color="#00ff00" meeting="false" start="2017-11-20" duration="11" complete="0" expand="true">
+                    <task id="307" name="Model matematyczny" color="#00ff00" meeting="false" start="2017-11-30" duration="11" complete="0" expand="true">
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
-                        <task id="313" name="Opracowanie transmitancji" color="#3333ff" meeting="false" start="2017-11-20" duration="11" complete="0" expand="true">
+                        <task id="313" name="Opracowanie transmitancji" color="#3333ff" meeting="false" start="2017-11-30" duration="11" complete="0" expand="true">
                             <notes><![CDATA[Stworzenie modelu matematycznego wybranych kanałów sterowania samolotem na podstawie wcześniej zarejestrowanych danych.]]></notes>
                         </task>
                     </task>
-                    <task id="292" name="Regulator" color="#ff9999" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                    <task id="292" name="Regulator" color="#ff9999" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
-                        <task id="294" name="Wybór regulatora" color="#ff9999" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                        <task id="294" name="Wybór regulatora" color="#ff9999" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                             <notes><![CDATA[Wybór rodzaju regulatora w celu jego implementacji]]></notes>
                         </task>
-                        <task id="296" name="Implementacja" color="#ff9999" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                        <task id="296" name="Implementacja" color="#ff9999" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                             <notes><![CDATA[Implementacja wymaga:
 - stworzenia bibliotek,
 - dobór parametrów regulatora.]]></notes>
                         </task>
-                        <task id="323" name="Testy jednostkowe" color="#ff9999" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                        <task id="323" name="Testy jednostkowe" color="#ff9999" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                             <notes><![CDATA[Wykonanie testów jednostkowych w celu sprawdzenia działania bibliotek zgodnie z założeniami.
 ]]></notes>
                         </task>
                     </task>
-                    <task id="299" name="Komunikacja z x-plane" color="#3333ff" meeting="false" start="2017-11-20" duration="28" complete="0" expand="true">
+                    <task id="299" name="Komunikacja z x-plane" color="#3333ff" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                         <notes><![CDATA[Zadanie polega na skomunikowaniu płytki z symulatorem. Przewidywana komunikacja przy użyciu magistrali CAN.]]></notes>
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
-                <task id="120" name="Integracja oprogramowania" color="#00ff00" meeting="false" start="2017-12-18" duration="3" complete="0" expand="true"/>
+                <task id="120" name="Integracja oprogramowania" color="#00ff00" meeting="false" start="2017-12-28" duration="3" complete="0" expand="true"/>
             </task>
-            <task id="111" name="Zatwierdzenie projektu konstrukcyjnego" color="#ff0000" meeting="true" start="2017-12-21" duration="0" complete="0" expand="true">
+            <task id="111" name="Zatwierdzenie projektu konstrukcyjnego" color="#ff0000" meeting="true" start="2017-12-31" duration="0" complete="0" expand="true">
                 <notes><![CDATA[Warunki zaliczenia etapu:
 1. Dostarczenie autorskiego opracowania zawierającego:
 - projekt części sprzętowej urządzenia,
@@ -250,7 +250,7 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
                 <depend id="157" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="178" name="Weryfikacja" color="#00ff00" meeting="false" start="2018-01-01" duration="24" complete="0" expand="true">
+        <task id="178" name="Weryfikacja" color="#00ff00" meeting="false" start="2018-01-01" duration="24" complete="0" expand="false">
             <notes><![CDATA[Niniejsza część weryfikacji spełnienia założeń konstrukcyjnych przez prototyp urządzenia.]]></notes>
             <task id="202" name="Testy HIL" color="#00ff00" meeting="false" start="2018-01-01" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Przetestowanie oprogramowania na symulatorze lotu.]]></notes>
@@ -272,7 +272,7 @@ Zadania
 UWAGA! Niezaliczenie tego zadania uniemożliwia zaliczenie projektu. Opóźnienie w oddaniu raportu z weryfikacji zawierającego obniżeniem oceny z tej części o 0.5 stopnia/tydzień opóźnienia.]]></notes>
             </task>
         </task>
-        <task id="157" name="Wykonanie" color="#00ff00" meeting="false" start="2018-01-01" duration="17" complete="0" expand="true">
+        <task id="157" name="Wykonanie" color="#00ff00" meeting="false" start="2018-01-01" duration="17" complete="0" expand="false">
             <notes><![CDATA[Niniejsza część służy wykonaniu prototypu urządzenia. Musi wynikać ona bezpośrednio z projektu konstrukcyjnego.
 ]]></notes>
             <task id="201" name="Montaż elementów" color="#00ff00" meeting="false" start="2018-01-01" duration="1" complete="0" expand="true">
@@ -363,7 +363,6 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
         <allocation task-id="220" resource-id="9" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="117" resource-id="9" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="119" resource-id="9" function="Default:0" responsible="false" load="100.0"/>
-        <allocation task-id="105" resource-id="9" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="27" resource-id="9" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="292" resource-id="9" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="301" resource-id="9" function="Default:0" responsible="true" load="100.0"/>
