@@ -7,8 +7,8 @@ Piotr Grzybowski
 Politechnika Rzeszowska
 2017]]></description>
     <view zooming-state="default:6" id="gantt-chart">
-        <field id="tpd3" name="Nazwa zadania" width="387" order="0"/>
-        <field id="tpd4" name="Data rozpoczęcia" width="111" order="1"/>
+        <field id="tpd3" name="Nazwa zadania" width="438" order="0"/>
+        <field id="tpd4" name="Data rozpoczęcia" width="60" order="1"/>
         <field id="tpd5" name="Data zakończenia" width="148" order="2"/>
         <option id="color.recent"><![CDATA[#990099 #ff9999 #00ff00 #f4f4f4 #3333ff #000000 #ff0000 #ffcc00]]></option>
     </view>
@@ -208,7 +208,6 @@ UWAGA! Niezaliczenie tego zadania uniemożliwia przejście do kolejnych etapów 
                     </task>
                     <task id="292" name="Regulator" color="#ff9999" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                         <depend id="120" type="2" difference="0" hardness="Strong"/>
-                        <task id="352" name="Struktura oprogramowania modułu regulatora" color="#ff9999" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true"/>
                         <task id="294" name="Wybór regulatora" color="#ff9999" meeting="false" start="2017-11-30" duration="28" complete="0" expand="true">
                             <notes><![CDATA[Wybór rodzaju regulatora w celu jego implementacji]]></notes>
                         </task>
