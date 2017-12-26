@@ -27,7 +27,7 @@ void PID_init(nr, kp, ki, kd, dt):
 float PID_update(nr, desired, measured):
 {
     
-	filter=1/(1+PID.s[nr].dt)
+	
 	error = desired - measured;
     p = PIDs[nr].kp * error;
     PIDs[nr].Integral += (error + PIDs[nr].LastError) * PIDs[nr].dt * 0.5;
