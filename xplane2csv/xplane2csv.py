@@ -37,8 +37,10 @@ def ProcessRange(CurrentRange):
 
     return Columns
 
+# Find empty lines which separates data ranges
 Separators = [i for i,x in enumerate(RawData) if x.__len__() <= 1]
 
+# Process separated ranges
 for i in range(Separators.__len__()-1):
     ProcessedRange = ProcessRange(RawData[Separators[i]+1:Separators[i+1]])
     for key,value in ProcessedRange.items():
@@ -47,12 +49,13 @@ for i in range(Separators.__len__()-1):
         else:
             Values[key] = value
 
+# Find longest column
 maxlen = 0
-
 for key,value in Values.items():
     if value.__len__() > maxlen:
         maxlen = value.__len__()
 
+# Fill in shorter columns with zeros
 for key,value in Values.items():
     if value.__len__()<maxlen:
         Values[key] = (maxlen - value.__len__()) * [0] + value
