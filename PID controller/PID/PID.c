@@ -1,16 +1,17 @@
 #include <stdio.h>
 
-typdef struct  {
-	float kp ;
+
+typedef struct {
+	float kp;
 	float ki;
 	float kd;
 	float dt;
 	float LastError;
 	float Integral;
 	float windup;
-}PID
+}PID;
 
-PIDs[]=[PID PID1, PID PID2, PID PID3, PID PID4];
+PID PIDs[4];
 
 void PID_init(int nr, float kp, float ki, float kd, float dt, float windup)
 {
@@ -22,15 +23,13 @@ void PID_init(int nr, float kp, float ki, float kd, float dt, float windup)
 	PIDs[nr].LastError = 1;
 	PIDs[nr].windup = windup;
 
-
-	return 0;
 }
 
-float PID_update(nr, desired, measured)
+float PID_update(int nr, float desired, float measured)
 {
 	
-	error = desired - measured;
-	p = PIDs[nr].kp * error;
+	float error = desired - measured;
+	float p = PIDs[nr].kp * error;
 	PIDs[nr].Integral += (error + PIDs[nr].LastError) * PIDs[nr].dt ;
 	//ANTIWINDUP
 	if(PIDs[nr].windup != 0)
@@ -40,7 +39,7 @@ float PID_update(nr, desired, measured)
 		if(PIDs[nr].Integral<-PIDs[nr].windup)
 			PIDs[nr].Integral = -PIDs[nr].windup;
 	}
-	d = ( (error - PIDs[nr].LastError)/PIDs[nr].dt) * PIDs[nr].kd;
+	float d = ( (error - PIDs[nr].LastError)/PIDs[nr].dt) * PIDs[nr].kd;
 
 	PIDs[nr].LastError = error;
 
