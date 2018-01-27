@@ -1,1 +1,0 @@
-There are additional headers in the middle of data
