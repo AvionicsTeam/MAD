@@ -12,11 +12,14 @@ q = identyfikacja(x, y, 1/50, 2, 0)
 figure(2)
 subplot(2,1,1)
 lsim(q, x, 0:1/50:10)
-title("q")
+title("Prêdko¶æ k±towa pochylania (model)")
+grid on
 subplot(2,1,2)
 plot(x)
 hold on
 plot(y)
+title("Prêdko¶æ k±towa pochylania (zarejestrowane dane)")
+grid on
 
 %   in: dH, out: theta [rad]
 integral = tf([1], [1 0]);
