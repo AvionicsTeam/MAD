@@ -1,0 +1,4 @@
+Dependencies for Project 'MAD', Target 'CMSIS-DAP': (DO NOT MODIFY !)
+F (.\MAD.c)(0x5A6B42FC)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_CMSIS-DAP-IC:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F303xC-o .\objects\mad.o --omf_browse .\objects\mad.crf --depend .\objects\mad.d)
+I (stm32f303xc.h)(0x5A6B2F38)
+F (.\stm32f303xc.h)(0x5A6B2F38)()

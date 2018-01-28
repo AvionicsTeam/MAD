@@ -7,9 +7,10 @@
 
   <Targets>
     <Target>
-      <TargetName>Target 1</TargetName>
+      <TargetName>CMSIS-DAP</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060528::V5.06 update 5 (build 528)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -378,6 +379,18 @@
       <Groups>
         <Group>
           <GroupName>Source Group 1</GroupName>
+          <Files>
+            <File>
+              <FileName>MAD.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MAD.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f303xc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\stm32f303xc.h</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>
