@@ -247,3 +247,5 @@ octave-workspace
 *.l2p
 *.iex
 
+# MATLAB
+*.m~
